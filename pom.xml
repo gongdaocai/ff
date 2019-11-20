@@ -25,7 +25,7 @@
 
         <scm>
             <!--release包需要放入的nexus或者其他maven release包的仓库url地址-->
-            <url>http://www.xclyforever.com:8081/nexus/repository/java-release/</url>
+            <url>https://https://github.com/gongdaocai/ff</url>
             <!--connection, developerConnection: 都是连接字符串，其中后者是具有write权限的scm连接 -->
             <!--需要打包项目的git地址-->
             <developerConnection>scm:git:https://github.com/gongdaocai/ff.git</developerConnection>
@@ -34,6 +34,26 @@
             <!---->
             <tag>HEAD</tag>
         </scm>
+    <build>
+        <plugins>
+            <!-- 发布插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <!--git用户名-->
+                    <username>18371800703@163.com</username>
+                    <!--git密码-->
+                    <password>lygdc1314</password>
+                    <!--mvn目标指令-->
+                    <goals>-f pom.xml deploy</goals>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
