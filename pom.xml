@@ -28,9 +28,9 @@
             <url>http://www.xclyforever.com:8081/nexus/repository/java-release/</url>
             <!--connection, developerConnection: 都是连接字符串，其中后者是具有write权限的scm连接 -->
             <!--需要打包项目的git地址-->
-            <developerConnection>scm:git:http://xxxx/c-h5/portal-common-base.git</developerConnection>
+            <developerConnection>scm:git:https://github.com/gongdaocai/ff.git</developerConnection>
             <!--需要打包项目的git地址-->
-            <connection>scm:git:http://xxx/c-h5/portal-common-base.git</connection>
+            <connection>scm:git:https://github.com/gongdaocai/ff.git</connection>
             <!---->
             <tag>HEAD</tag>
         </scm>
